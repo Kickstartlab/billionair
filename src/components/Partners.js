@@ -57,7 +57,7 @@ function ImageSlider() {
 
             <Slider ref={slider} {...settings}>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-black-200 rounded-2xl">
                         <img src={team} alt='press' className='rounded-t-2xl w-full'></img>
 
@@ -74,7 +74,7 @@ function ImageSlider() {
                     </div>
                 </div>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-black-200 rounded-2xl">
                         <img src={team} alt='press' className='rounded-t-2xl w-full'></img>
 
@@ -91,7 +91,7 @@ function ImageSlider() {
                     </div>
                 </div>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-black-200 rounded-2xl">
                         <img src={team} alt='press' className='rounded-t-2xl w-full'></img>
 
@@ -108,7 +108,7 @@ function ImageSlider() {
                     </div>
                 </div>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-black-200 rounded-2xl">
                         <img src={team} alt='press' className='rounded-t-2xl w-full'></img>
 
@@ -125,7 +125,7 @@ function ImageSlider() {
                     </div>
                 </div>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-black-200 rounded-2xl">
                         <img src={team} alt='press' className='rounded-t-2xl w-full'></img>
 
@@ -142,7 +142,7 @@ function ImageSlider() {
                     </div>
                 </div>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-black-200 rounded-2xl">
                         <img src={team} alt='press' className='rounded-t-2xl w-full'></img>
 
@@ -159,7 +159,7 @@ function ImageSlider() {
                     </div>
                 </div>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-black-200 rounded-2xl">
                         <img src={team} alt='press' className='rounded-t-2xl w-full'></img>
 

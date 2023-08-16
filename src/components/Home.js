@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Footer from './Footer'
 import Menu from './Menu'
 import Slider from './Slider'
@@ -60,10 +60,19 @@ import input_1 from '../assets/input_1.png';
 import input_2 from '../assets/input_2.png';
 import bg_top from '../assets/bg_top.png';
 import Faq from './Faq';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 export default function Home() {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 800
+        });
+        AOS.refresh();
+    }, [])
 
     const [copySuccess, setCopySuccess] = useState('');
 
@@ -880,7 +889,7 @@ export default function Home() {
                         </div>
 
                         <div>
-                            <img src={tokenomics} alt='tokenomics' className='flex mx-auto lg:pt-12 pt-6'></img>
+                            <img data-aos='zoom-in' src={tokenomics} alt='tokenomics' className='flex mx-auto lg:pt-12 pt-6'></img>
                             <img src={token} alt='tokenomics' className='lg:flex mx-auto absolute right-0 left-0 -mt-96 -translate-y-4 translate-x-12 hidden'></img>
                         </div>
                     </div>

@@ -56,7 +56,7 @@ function ImageSlider() {
 
             <Slider ref={slider} {...settings}>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-green-100 rounded-2xl h-450">
                         <img src={press} alt='press' className='rounded-t-2xl w-full'></img>
 
@@ -75,7 +75,7 @@ function ImageSlider() {
                     </div>
                 </div>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-green-100 rounded-2xl h-450">
                         <img src={press} alt='press' className='rounded-t-2xl w-full'></img>
 
@@ -95,7 +95,7 @@ function ImageSlider() {
                     </div>
                 </div>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-green-100 rounded-2xl h-450">
                         <img src={press} alt='press' className='rounded-t-2xl'></img>
 
@@ -114,7 +114,7 @@ function ImageSlider() {
                     </div>
                 </div>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-green-100 rounded-2xl h-450">
                         <img src={press} alt='press' className='rounded-t-2xl w-full'></img>
 
@@ -133,7 +133,7 @@ function ImageSlider() {
                     </div>
                 </div>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-green-100 rounded-2xl h-450">
                         <img src={press} alt='press' className='rounded-t-2xl w-full'></img>
 
@@ -153,7 +153,7 @@ function ImageSlider() {
                     </div>
                 </div>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-green-100 rounded-2xl h-450">
                         <img src={press} alt='press' className='rounded-t-2xl'></img>
 

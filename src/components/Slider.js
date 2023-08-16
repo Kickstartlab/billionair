@@ -54,7 +54,7 @@ function ImageSlider() {
 
             <Slider ref={slider} {...settings}>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-gradient rounded-3xl lg:p-8 p-5 space-y-8">
                         <h3 className='text-gradient lg:text-3xl text-xl font-bold'>
                             Q1 - 2023
@@ -65,7 +65,7 @@ function ImageSlider() {
                     </div>
                 </div>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-gradient rounded-3xl lg:p-8 p-5 space-y-8">
                         <h3 className='text-gradient lg:text-3xl text-xl font-bold'>
                             Q2 - 2023
@@ -76,7 +76,7 @@ function ImageSlider() {
                     </div>
                 </div>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-gradient rounded-3xl lg:p-8 p-5 space-y-8">
                         <h3 className='text-gradient lg:text-3xl text-xl font-bold'>
                             Q3 - 2023
@@ -87,7 +87,7 @@ function ImageSlider() {
                     </div>
                 </div>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-gradient rounded-3xl lg:p-8 p-5 space-y-8">
                         <h3 className='text-gradient lg:text-3xl text-xl font-bold'>
                             Q4 - 2023
@@ -98,7 +98,7 @@ function ImageSlider() {
                     </div>
                 </div>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-gradient rounded-3xl lg:p-8 p-5 space-y-8">
                         <h3 className='text-gradient lg:text-3xl text-xl font-bold'>
                             Q5 - 2023
@@ -109,7 +109,7 @@ function ImageSlider() {
                     </div>
                 </div>
 
-                <div className="card-wrapper col-span-1">
+                <div data-aos='fade-up' className="card-wrapper col-span-1">
                     <div className="bg-gradient rounded-3xl lg:p-8 p-5 space-y-8">
                         <h3 className='text-gradient lg:text-3xl text-xl font-bold'>
                             Q6 - 2023
