@@ -104,7 +104,7 @@ export default function Home() {
             {/* top section */}
 
             <div className='bg-top'>
-                <img src={bg_top} alt='vector' className='absolute right-0 top-0'></img>
+                {/* <img src={bg_top} alt='vector' className='absolute right-0 top-0'></img> */}
 
                 <div className="lg:px-12 px-5 container mx-auto relative z-20">
                     <Menu />
