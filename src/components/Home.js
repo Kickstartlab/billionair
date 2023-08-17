@@ -948,7 +948,7 @@ export default function Home() {
                                     multipliers with built-in deflation.</p>
                             </div>
 
-                            <img src={arb_token} alt='arb-token' className='w-64 lg:block flex mx-auto'></img>
+                            <img src={arb_token} alt='arb-token' className='lg:block flex mx-auto w-60'></img>
                         </div>
 
                         <div className='lg:flex items-center justify-between border border-opacity-5 rounded-2xl lg:p-8 p-6 bg-gradient lg:space-y-0 space-y-8'>
