@@ -59,6 +59,7 @@ import card from '../assets/usdc.svg';
 import input_1 from '../assets/input_1.png';
 import input_2 from '../assets/input_2.png';
 import bg_top from '../assets/bg_top.png';
+import copy from '../assets/copy.svg';
 import bg_mobile from '../assets/bg_mobile.svg';
 import Faq from './Faq';
 import AOS from 'aos';
@@ -178,7 +179,7 @@ export default function Home() {
 
                         </div>
 
-                        <div className='rounded-2xl lg:px-14 px-5 lg:py-8 py-6 bg-blur lg:w-1/2'>
+                        <div className='rounded-3xl lg:px-14 px-5 lg:py-8 py-6 backdrop-blur-xl lg:w-1/2 border'>
 
                             <h1 className="lg:text-5xl text-2xl text-center font-bold">
                                 $AIRB Pre-Sale
@@ -266,7 +267,7 @@ export default function Home() {
                                     <label>
                                         You get free 0 NFT Tickets
                                     </label>
-                                    <button className='w-full py-4 text-black-100 font-semibold text-center bg-pager rounded-2xl'>
+                                    <button className='w-full py-4 text-black-100 font-semibold text-center btn-gradient rounded-2xl'>
                                         Connect wallet
                                     </button>
                                 </div>
@@ -438,7 +439,7 @@ export default function Home() {
                             <label>
                                 You get free 0 NFT Tickets
                             </label>
-                            <button className='w-full py-4 text-black-100 font-semibold text-center bg-pager rounded-2xl'>
+                            <button className='w-full py-4 text-black-100 font-semibold text-center btn-gradient rounded-2xl'>
                                 Connect wallet
                             </button>
                         </div>
@@ -934,7 +935,7 @@ export default function Home() {
 
                     </div>
 
-                    <div className='grid lg:grid-cols-2 grid-cols-1 items-center justify-center gap-y-8 lg:py-20 py-6'>
+                    <div className='grid lg:grid-cols-2 grid-cols-1 items-center justify-center gap-8 lg:py-20 py-6'>
 
                         <div className='lg:flex items-center justify-between border border-opacity-5 rounded-2xl lg:p-8 p-6 bg-gradient lg:space-y-0 space-y-8'>
                             <div className='space-y-5'>
@@ -1133,11 +1134,11 @@ export default function Home() {
                                 </h4>
 
                                 <div className="">
-                                    <p className='opacity-60 lg:block hidden'>0xB6b3B930AF6Fa095D71876d268a89Def5f3e9894</p>
-                                    <p className='opacity-60 break-words lg:hidden block'>0xB6b3B93...ef5f3e9894</p>
+                                    <button onClick={() => copyToClipBoard('0xB6b3B930AF6Fa095D71876d268a89Def5f3e9894')} className='flex items-center gap-x-2'>
+                                        <p className='opacity-60 lg:block hidden'>0xB6b3B930AF6Fa095D71876d268a89Def5f3e9894</p>
+                                        <p className='opacity-60 break-words lg:hidden block'>0xB6b3B93...ef5f3e9894</p>
 
-                                    <button onClick={() => copyToClipBoard('0xB6b3B930AF6Fa095D71876d268a89Def5f3e9894')} className='p-2 bg-green-50 rounded-xl mt-2'>
-                                        copy to clipboard
+                                        <img src={copy} alt='copy'></img>
                                     </button>
                                 </div>
 

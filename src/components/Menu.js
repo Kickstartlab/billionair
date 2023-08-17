@@ -79,7 +79,7 @@ export default function Menu() {
             <a href="/contact" className="">Contact Us</a>
           </button>
 
-          <button onClick={() => setShow(!show)} className="w-full text-black-100 p-3 bg-pager rounded-lg text-left">
+          <button onClick={() => setShow(!show)} className="px-8 text-black-100 p-3 btn-gradient rounded-lg text-left">
             <a href="/blog" className="">Buy $AIRB</a>
           </button>
         </div>
