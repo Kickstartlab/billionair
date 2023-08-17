@@ -100,6 +100,17 @@ hr {
   backdrop-filter: blur(2px);
 }
 
+.bg_blur {
+  box-shadow: 0px -3px 0px 0px #FFFFFF33 inset;
+  box-shadow: 0px 3px 0px 0px #FFFFFF33 inset;
+  box-shadow: -3px 0px 0px 0px #FFFFFF33 inset;
+  box-shadow: 3px 0px 0px 0px #FFFFFF33 inset;
+  box-shadow: 0px 0px 3px 0px #FFFFFF33 inset;
+  background: radial-gradient(54.8% 53% at 50% 50%, #151515 0%, rgba(21, 21, 21, 0) 100%),
+    linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  backdrop-filter: blur(2px);
+}
+
 .shadow {
   box-shadow: 0px 4px 4px 0px #00000040;
 }

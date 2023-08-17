@@ -299,7 +299,7 @@ export default function Home() {
                 <div className='space-y-5 py-8'>
 
                     <h1 className="text-3xl font-bold">
-                        The Ultimate Web3
+                        The Ultimate Web3 1
                         Gamble & Earn Hub
                     </h1>
 
@@ -350,7 +350,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className='rounded-2xl lg:px-14 px-5 lg:py-8 py-6 bg-blur lg:w-1/2'>
+                <div className='rounded-2xl lg:px-14 px-5 lg:py-8 py-6 bg_blur'>
 
                     <h1 className="lg:text-5xl text-2xl text-center font-bold">
                         $AIRB Pre-Sale
@@ -373,38 +373,38 @@ export default function Home() {
                     <div className='grid grid-cols-3 grid-rows-2 items-center justify-center gap-3 mt-5 mb-3'>
 
                         <a href='/'>
-                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-2 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
-                                <img src={bep} alt='bnd' className='flex mx-auto'></img>
+                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-1 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
+                                <img src={bep} alt='bnb' className='flex mx-auto'></img>
                             </button>
                         </a>
 
                         <a href='/'>
-                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-2 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
-                                <img src={eth} alt='bnd' className='flex mx-auto'></img>
+                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-1 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
+                                <img src={eth} alt='eth' className='flex mx-auto'></img>
                             </button>
                         </a>
 
                         <a href='/'>
-                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-2 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
-                                <img src={usdt} alt='bnd' className='flex mx-auto'></img>
+                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-1 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
+                                <img src={usdt} alt='usdt' className='flex mx-auto'></img>
                             </button>
                         </a>
 
                         <a href='/'>
-                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-2 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
-                                <img src={busd} alt='bnd' className='flex mx-auto'></img>
+                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-1 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
+                                <img src={busd} alt='busd' className='flex mx-auto'></img>
                             </button>
                         </a>
 
                         <a href='/'>
-                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-2 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
-                                <img src={usdc} alt='bnd' className='flex mx-auto'></img>
+                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-1 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
+                                <img src={usdc} alt='usdc' className='flex mx-auto'></img>
                             </button>
                         </a>
 
                         <a href='/'>
-                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-2 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
-                                <img src={card} alt='bnd' className='flex mx-auto'></img>
+                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-1 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
+                                <img src={card} alt='card' className='flex mx-auto'></img>
                             </button>
                         </a>
 
