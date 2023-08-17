@@ -974,10 +974,6 @@ video {
   .lg\:col-span-2{
     grid-column: span 2 / span 2;
   }
-  .lg\:mx-0{
-    margin-left: 0px;
-    margin-right: 0px;
-  }
   .lg\:ml-64{
     margin-left: 16rem;
   }

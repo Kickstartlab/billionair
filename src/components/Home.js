@@ -4,6 +4,7 @@ import Menu from './Menu'
 import Slider from './Slider'
 import Release from './Release';
 import Partners from './Partners';
+import Competition from './Competition';
 import tokenomics from '../assets/tokenomics.png';
 import video_3 from '../assets/video_3.png';
 import token from '../assets/token.png';
@@ -46,7 +47,6 @@ import bnb from '../assets/bnb.png';
 import bitmart from '../assets/bitmart.png';
 import bg_shop from '../assets/bg_shop.png';
 import shape from '../assets/shape.png';
-import copy from '../assets/copy.svg';
 import bar from '../assets/bar.png';
 import bep from '../assets/bnb.svg';
 import eth from '../assets/eth.svg';
@@ -59,6 +59,7 @@ import card from '../assets/usdc.svg';
 import input_1 from '../assets/input_1.png';
 import input_2 from '../assets/input_2.png';
 import bg_top from '../assets/bg_top.png';
+import bg_mobile from '../assets/bg_mobile.svg';
 import Faq from './Faq';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -112,13 +113,12 @@ export default function Home() {
 
             {/* top section */}
 
-            <div className='bg-top'>
-                {/* <img src={bg_top} alt='vector' className='absolute right-0 top-0'></img> */}
+            <div className='bg-top lg:block hidden'>
+                <img src={bg_top} alt='vector' className='absolute right-0 top-0 lg:block hidden'></img>
 
                 <div className="lg:px-12 px-5 container mx-auto relative z-20">
                     <Menu />
-
-                    <div className='lg:flex justify-between items-center lg:py-20 py-8 gap-x-12 lg:space-y-0 space-y-6'>
+                    <div className='lg:flex hidden justify-between items-center lg:py-20 py-8 gap-x-12'>
 
                         <div className='space-y-5 lg:w-1/2'>
                             <div className='flex lg:gap-x-4 gap-x-2 items-center'>
@@ -143,17 +143,17 @@ export default function Home() {
                             </p>
 
                             <div className='flex lg:gap-x-8 gap-x-3 items-center'>
-                                <button className='lg:px-8 px-3 lg:py-3 py-2 rounded-2xl btn_gradient flex items-center justify-center lg:gap-x-4 gap-x-2 border lg:text-lg'>
+                                <button className='lg:px-8 px-3 lg:py-3 py-2 rounded-2xl bg-black-400 flex items-center justify-center lg:gap-x-4 gap-x-2 border-gradient lg:text-lg'>
                                     <img src={btn_1} className=''></img>
                                     Raffles
                                 </button>
 
-                                <button className='lg:px-8 px-3 lg:py-3 py-2 rounded-2xl btn_gradient flex items-center justify-center lg:gap-x-4 gap-x-2 border lg:text-lg'>
+                                <button className='lg:px-8 px-3 lg:py-3 py-2 rounded-2xl bg-black-400 flex items-center justify-center lg:gap-x-4 gap-x-2 border-gradient lg:text-lg'>
                                     <img src={btn_2} className=''></img>
                                     Games
                                 </button>
 
-                                <button className='lg:px-8 px-3 lg:py-3 py-2 rounded-2xl btn_gradient flex items-center justify-center lg:gap-x-4 gap-x-2 border lg:text-lg'>
+                                <button className='lg:px-8 px-3 lg:py-3 py-2 rounded-2xl bg-black-400 flex items-center justify-center lg:gap-x-4 gap-x-2 border-gradient lg:text-lg'>
                                     <img src={btn_3} className=''></img>
                                     Betting
                                 </button>
@@ -163,7 +163,7 @@ export default function Home() {
                             <div className='lg:flex gap-x-3 items-center pt-5 lg:space-y-0 space-y-5'>
 
                                 <button className='lg:px-8 px-16 py-3 rounded-2xl bg-black-50 lg:text-xl font-medium shadow
-                                lg:block flex lg:mx-0 mx-auto'>
+                                lg:block flex mx-auto items-center justify-center lg:w-44 w-full'>
                                     Whitepaper
                                 </button>
 
@@ -287,8 +287,177 @@ export default function Home() {
                         </div>
 
                     </div>
-
                 </div>
+            </div>
+
+            <img src={bg_mobile} alt='vector' className='absolute right-0 top-0 lg:hidden block'></img>
+
+            <div className='lg:space-y-0 space-y-6 relative z-20 px-5 container mx-auto lg:hidden block'>
+
+                <Menu />
+
+                <div className='space-y-5 py-8'>
+
+                    <h1 className="text-3xl font-bold">
+                        The Ultimate Web3
+                        Gamble & Earn Hub
+                    </h1>
+
+                    <p className=''>
+                        Gambling Redefined: Become the House with unprecedented rewards, endless<br></br>
+                        possibilities, and cross-community bridge-building!
+                    </p>
+
+                    <div className='flex gap-x-3 items-center'>
+                        <button className='px-3 py-2 rounded-2xl bg-black-400 flex items-center justify-center gap-x-2 border-gradient lg:text-lg'>
+                            <img src={btn_1} className=''></img>
+                            Raffles
+                        </button>
+
+                        <button className='px-3 py-2 rounded-2xl bg-black-400 flex items-center justify-center gap-x-2 border-gradient lg:text-lg'>
+                            <img src={btn_2} className=''></img>
+                            Games
+                        </button>
+
+                        <button className='px-3 py-2 rounded-2xl bg-black-400 flex items-center justify-center gap-x-2 border-gradient lg:text-lg'>
+                            <img src={btn_3} className=''></img>
+                            Betting
+                        </button>
+                    </div>
+
+
+                    <button className='py-3 rounded-2xl bg-black-50 lg:text-xl font-medium shadow flex mx-auto items-center justify-center w-full'>
+                        Whitepaper
+                    </button>
+
+                    <div className='flex justify-center gap-x-2 items-center'>
+                        <a href=''><img src={icon_1} alt='icon' className='hover:opacity-50'></img></a>
+                        <a href=''><img src={icon_2} alt='icon' className='hover:opacity-50'></img></a>
+                        <a href=''><img src={icon_3} alt='icon' className='hover:opacity-50'></img></a>
+                        <a href=''><img src={icon_4} alt='icon' className='hover:opacity-50'></img></a>
+                        <a href=''><img src={icon_5} alt='icon' className='hover:opacity-50'></img></a>
+                        <a href=''><img src={icon_6} alt='icon' className='hover:opacity-50'></img></a>
+                        <a href=''><img src={icon_7} alt='icon' className='hover:opacity-50'></img></a>
+                        <a href=''><img src={icon_8} alt='icon' className='hover:opacity-50'></img></a>
+                    </div>
+
+                    <p className='underline lg:text-lg lg:text-left text-center'>
+                        Audited & KYC | 100% Secure & Verified
+                    </p>
+
+                    <div>
+                        <a href=''><img src={silid} className='lg:block flex mx-auto' alt='logo'></img></a>
+                    </div>
+                </div>
+
+                <div className='rounded-2xl lg:px-14 px-5 lg:py-8 py-6 bg-blur lg:w-1/2'>
+
+                    <h1 className="lg:text-5xl text-2xl text-center font-bold">
+                        $AIRB Pre-Sale
+                    </h1>
+
+                    <img src={bar} alt='progressbar' className='flex mx-auto py-6'></img>
+
+                    <div className='space-y-2 text-center'>
+                        <p className='lg:text-2xl text-normal font-medium'>
+                            USD Raised: <span className='text-yellow-50'>$369,725 / $1,200,000</span>
+                        </p>
+                        <p className='lg:text-2xl text-normal'>
+                            Listing price: $0,060
+                        </p>
+                        <p className='lg:text-2xl text-normal font-medium'>
+                            1 $AIRB = $0.030
+                        </p>
+                    </div>
+
+                    <div className='grid grid-cols-3 grid-rows-2 items-center justify-center gap-3 mt-5 mb-3'>
+
+                        <a href='/'>
+                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-2 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
+                                <img src={bep} alt='bnd' className='flex mx-auto'></img>
+                            </button>
+                        </a>
+
+                        <a href='/'>
+                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-2 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
+                                <img src={eth} alt='bnd' className='flex mx-auto'></img>
+                            </button>
+                        </a>
+
+                        <a href='/'>
+                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-2 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
+                                <img src={usdt} alt='bnd' className='flex mx-auto'></img>
+                            </button>
+                        </a>
+
+                        <a href='/'>
+                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-2 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
+                                <img src={busd} alt='bnd' className='flex mx-auto'></img>
+                            </button>
+                        </a>
+
+                        <a href='/'>
+                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-2 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
+                                <img src={usdc} alt='bnd' className='flex mx-auto'></img>
+                            </button>
+                        </a>
+
+                        <a href='/'>
+                            <button className='rounded-2xl border-2 border-white-100 lg:px-5 py-2 hover:bg-yellow-100 hover:border-yellow-100 w-full'>
+                                <img src={card} alt='bnd' className='flex mx-auto'></img>
+                            </button>
+                        </a>
+
+                    </div>
+
+                    <form className='space-y-2'>
+
+                        <div className='space-y-2'>
+                            <label>
+                                Amount in <strong>BNB</strong> You Pay:
+                            </label>
+                            <div className="py-4 pl-5 w-full bg-white-100 flex items-center justify-between rounded-2xl">
+                                <input type="number" placeholder="0" id="email" required="" className="bg-white-100 focus:ring-0 focus:outline-none w-full placeholder-black-100 text-black-100" />
+
+                                <img src={input_1} alt='progressbar' className='pr-5'></img>
+                            </div>
+                        </div>
+
+                        <div className='space-y-2'>
+                            <label>
+                                Amount in <strong>AIRB</strong> You Receive:
+                            </label>
+                            <div className="py-4 pl-5 w-full bg-white-100 flex items-center justify-between rounded-2xl">
+                                <input type="number" placeholder="0" id="email" required="" className="bg-white-100 focus:ring-0 focus:outline-none w-full placeholder-black-100 text-black-100" />
+
+                                <img src={input_2} alt='progressbar' className='pr-5'></img>
+                            </div>
+                        </div>
+
+                        <div className='space-y-2'>
+                            <label>
+                                You get free 0 NFT Tickets
+                            </label>
+                            <button className='w-full py-4 text-black-100 font-semibold text-center bg-pager rounded-2xl'>
+                                Connect wallet
+                            </button>
+                        </div>
+
+                    </form>
+
+                    <div className='flex items-center justify-between lg:gap-x-6 gap-x-4 mt-2'>
+                        <button className='flex items-center justify-center lg:gap-5 gap-2 bg-black-50 border-2 border-white-50 w-full py-1 rounded-xl lg:text-base text-xs'>
+                            <img src={buy} alt='buy'></img>
+                            How to buy
+                        </button>
+
+                        <button className='flex items-center justify-center lg:gap-5 gap-2 bg-black-50 border-2 border-white-50 w-full py-1 rounded-xl lg:text-base text-xs'>
+                            <img src={link} alt='buy'></img>
+                            5% Referral Link
+                        </button>
+                    </div>
+                </div>
+
             </div>
 
             {/* logo slider */}
@@ -310,7 +479,7 @@ export default function Home() {
 
             {/* about section */}
 
-            <div className='bg-about'>
+            <div className='lg:block hidden bg-about'>
                 <div className="lg:px-20 px-5 lg:py-28 py-6 container mx-auto">
                     <div className='lg:flex justify-between items-center gap-x-24 lg:space-y-0 space-y-6'>
 
@@ -353,6 +522,50 @@ export default function Home() {
                         </div>
 
                     </div>
+                </div>
+            </div>
+
+            <div className="lg:hidden block px-5 py-6 container mx-auto">
+                <div className='lg:space-y-0 space-y-6'>
+
+                    <div className='space-y-8'>
+
+                        <div className='lg:space-y-2'>
+                            <h2 className='lg:text-4xl text-2xl font-bold'>
+                                <span className='text-gradient'>BillionAir</span> is a Revolutionary,
+                            </h2>
+                            <h2 className='lg:text-4xl text-2xl font-bold'>
+                                Multi-layered Blockchain
+                            </h2>
+                            <h2 className='lg:text-4xl text-2xl font-bold'>
+                                Gambling Platform.
+                            </h2>
+                        </div>
+
+                        <div className=''>
+                            <img src={about} alt='about' className='z-20 relative'></img>
+                            <img src={coin} alt='about' className='absolute w-16 right-0 -mt-8'></img>
+                        </div>
+
+                        <p className='opacity-90 lg:text-lg'>
+                            BillionAir is a trustless and secure blockchain ecosystem giving you a
+                            chance to own a piece of an exponentially growing industry and get a
+                            share of the revenue from its exceptional combination of gaming, betting,
+                            and a unique raffle solution offering unparalleled excitement and utility to
+                            global audiences.
+                        </p>
+
+                        <div>
+                            <a href='/'>
+                                <button className="lg:px-16 px-6 lg:py-4 py-3 rounded-2xl btn-gradient text-black-100 font-semibold text-lg">
+                                    Buy $AIRB
+                                </button>
+                            </a>
+                        </div>
+
+
+                    </div>
+
                 </div>
             </div>
 
@@ -713,7 +926,12 @@ export default function Home() {
                     {/* table */}
 
                     <div className='lg:py-20 py-6'>
-                        <img src={table} alt='table' className='flex mx-auto'></img>
+                        <img src={table} alt='table' className='lg:flex hidden mx-auto'></img>
+
+                        <div className='lg:hidden block bg-competition rounded-3xl'>
+                            <Competition />
+                        </div>
+
                     </div>
 
                     <div className='grid lg:grid-cols-2 grid-cols-1 items-center justify-center gap-y-8 lg:py-20 py-6'>
@@ -914,12 +1132,12 @@ export default function Home() {
                                     Address
                                 </h4>
 
-                                <div className="flex items-center gap-2">
-                                    <p className='opacity-60 break-words lg:block hidden'>0xB6b3B930AF6Fa095D71876d268a89Def5f3e9894</p>
+                                <div className="">
+                                    <p className='opacity-60 lg:block hidden'>0xB6b3B930AF6Fa095D71876d268a89Def5f3e9894</p>
                                     <p className='opacity-60 break-words lg:hidden block'>0xB6b3B93...ef5f3e9894</p>
 
-                                    <button onClick={() => copyToClipBoard('0xB6b3B930AF6Fa095D71876d268a89Def5f3e9894')}>
-                                        <img src={copy} alt='copy'></img>
+                                    <button onClick={() => copyToClipBoard('0xB6b3B930AF6Fa095D71876d268a89Def5f3e9894')} className='p-2 bg-green-50 rounded-xl mt-2'>
+                                        copy to clipboard
                                     </button>
                                 </div>
 
@@ -1110,10 +1328,10 @@ export default function Home() {
 
                     </div>
 
-                    <div data-aos="fade-right" className="flex flex-col items-center justify-center">
+                    <div data-aos="fade-right" className="flex flex-col items-center justify-center lg:pt-20 pt-8">
                         <div className="lg:w-7/12">
 
-                            <div className='text-center space-y-6 lg:py-20 py-8'>
+                            <div className='text-center space-y-6'>
                                 <h3 className="lg:text-5xl text-3xl font-bold">
                                     FAQ
                                 </h3>
@@ -1121,7 +1339,7 @@ export default function Home() {
                                 <p className='opacity-90'>You may have questions, we have the answers.</p>
                             </div>
 
-                            <div className="accordion mt-5">
+                            <div className="accordion lg:mt-6">
                                 {accordionData.map(({ title, content }) => (
                                     <Faq title={title} content={content} />
                                 ))}

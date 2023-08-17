@@ -31,6 +31,12 @@
   background-repeat: no-repeat;
 }
 
+.bg-competition {
+  background-image: url(../src/assets/bg-competiotion.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .text-gradient {
   background: linear-gradient(80.03deg, #6DD8D4 14.6%, #F389C0 32.28%),
     linear-gradient(0deg, #FFFFFF, #FFFFFF);
@@ -120,4 +126,9 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.border-gradient {
+  background: linear-gradient(141.23deg, #464756 15%, rgba(168, 168, 173, 0) 50%, #464756 86%);
+  border: 2px solid transparent;
 }

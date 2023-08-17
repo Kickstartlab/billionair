@@ -5,7 +5,7 @@ const Faq = ({ title, content }) => {
 
     return (
         <div className="accordion-item">
-            <div className="accordion-title flex justify-between items-end cursor-pointer space-y-12" onClick={() => setIsActive(!isActive)}>
+            <div className="accordion-title flex justify-between items-end cursor-pointer space-y-12 border-b-2 pb-3 border-white-50" onClick={() => setIsActive(!isActive)}>
                 <div className='lg:text-2xl font-semibold'>
                     {title}
                 </div>
