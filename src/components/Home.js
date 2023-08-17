@@ -185,7 +185,10 @@ export default function Home() {
                                 $AIRB Pre-Sale
                             </h1>
 
-                            <img src={bar} alt='progressbar' className='flex mx-auto py-6'></img>
+                            <div>
+                                <img src={bar} alt='progressbar' className='flex mx-auto py-6'></img>
+                                <span className='text-xs absolute -mt-12 ml-40'>25%</span>
+                            </div>
 
                             <div className='space-y-2 text-center'>
                                 <p className='lg:text-2xl text-normal font-medium'>
@@ -357,7 +360,10 @@ export default function Home() {
                         $AIRB Pre-Sale
                     </h1>
 
-                    <img src={bar} alt='progressbar' className='flex mx-auto py-6'></img>
+                    <div>
+                        <img src={bar} alt='progressbar' className='flex mx-auto py-6'></img>
+                        <span className='text-xs absolute -mt-10 ml-14'>25%</span>
+                    </div>
 
                     <div className='space-y-2 text-center'>
                         <p className='lg:text-2xl text-normal font-medium'>
